@@ -1,14 +1,14 @@
 sudo: false
 language: rust
 rust:
-- 1.21.0  # Two releases back
+- 1.22.0  # Two releases back
 - stable
 - beta
 - nightly
 
 matrix:
   include:
-  - rust: stable
+  - rust: 1.24.0  # Locking down for consistent behavior
     env: RUSTFMT
     install:
     - rustup component add rustfmt-preview
