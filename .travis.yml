@@ -6,6 +6,15 @@ rust:
 - beta
 - nightly
 
+matrix:
+  include:
+  - rust: stable
+    env: RUSTFMT_VERSION=0.8.6
+    install:
+    - travis_wait cargo install rustfmt --version $RUSTFMT_VERSION || echo "rustfmt already installed"
+    script:
+    - cargo fmt -- --write-mode=diff
+
 install:
 - rustc -Vv
 - cargo -V
