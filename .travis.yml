@@ -9,9 +9,9 @@ rust:
 matrix:
   include:
   - rust: stable
-    env: RUSTFMT_VERSION=0.8.6
+    env: RUSTFMT
     install:
-    - travis_wait cargo install rustfmt --version $RUSTFMT_VERSION || echo "rustfmt already installed"
+    - rustup component add rustfmt-preview
     script:
     - cargo fmt -- --write-mode=diff
 
