@@ -1,6 +1,7 @@
 example-rustfmt
 [![Travis Status](https://travis-ci.org/crate-ci/example-rustfmt.svg?branch=master)](https://travis-ci.org/crate-ci/example-rustfmt)
 [![Dependency Status](https://dependencyci.com/github/crate-ci/example-rustfmt/badge)](https://dependencyci.com/github/crate-ci/example-rustfmt)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/crate-ci/general)
 ===========
 
 ## Features
